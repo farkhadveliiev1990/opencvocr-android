@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/select_lbl_title"
+            style="@style/CommonTxt"
+            android:text="SELECT METHOD"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Scan Card"
+            android:onClick="onClickViewlBtn"/>
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Sch"
+            android:onClick="onClickEditBtn"/>
+    </LinearLayout>
+
+</LinearLayout>
